@@ -1,0 +1,76 @@
+---
+title: Xfce에서 일부 앱이 freeze되는 현상
+date: 2022-07-08 21:20:00 +0900
+categories: [linux, troubleshooting]
+tags: [linux, xfce]     # TAG names should always be lowercase
+---
+
+# 문제
+
+나는 EndeavourOS + Xfce + i3-gaps 조합을 사용 중이다. 정말 좋은 조합이지만 나를 거슬리게 만드는 문제가 있는데, 특정 앱이 자꾸 freeze되는 것이다.
+
+앱을 키고 다른 일을 하다가 (다른 workspace에서 작업하거나, 같은 workspace지만 focus는 다른 앱에 있을 때) 돌아가보면 그냥 애가 먹통이 된다. 화면에 앱이 나오지 않는다. 그 자리에는 뒤에 비치는 바탕화면과 i3가 표시해주는 테두리선만 있을 뿐이다.
+
+처음 문제를 일으킨 앱은 Alacritty다. 이전에 Arch + Xfce + Xmonad를 썼을 당시에도 Alacritty가 같은 문제를 일으켰는데, GitHub Issue를 보고 해결했다. 그런데 해당 GitHub Issue를 다시 찾을 수가 없었고, 그냥 Xfce-terminal를 사용하기로 했다.
+
+다음으로 문제를 일으킨 앱은 Discord다. ArchWiki에서 비슷한 문제의 해결법을 찾을 수 있는데 [Discord - ArchWiki](https://wiki.archlinux.org/title/Discord#Discord_freezes_after_getting_pinged_or_messaged) 시도는 해보지 않았다.
+
+Alacritty는 대체 터미널이 널렸고, Discord는 자주 쓰지 않아서 그냥 불편하게 문제를 안고 가기로 했다.
+
+---
+
+# 해결
+
+최근에 아주 멋진 마크다운 편집기를 찾았다. [MarkText](https://github.com/marktext/marktext)
+
+이 글도 해당 편집기로 작성 중이다.
+
+그런데 이 앱에서도 앞서 말한 freeze 문제가 발생했다. 오랜만에 발견한 멋있는 편집기이기에 Alacritty처럼 버리기 아깝다고 생각했고, 문제를 해결하기로 했다.
+
+GitHub Issue에서 1차적으로 정보를 찾는 데는 실패했다. 첫 페이지부터 중국어로 된 글이 많이 보여서 몇 개 훑다가 도망쳤다...
+
+MarkText도 Discord처럼 Electron기반인 것을 확인하고 Electron 문제일 수도 있겠다는 생각이 들었다. 그래서 Electron + i3로 이것저것 검색을 하다가 (이때까지 문제가 i3에 있다고 생각했다) 해결법을 Electron Issue에서 찾았다.
+
+[Electron apps freeze on linux 5.x kernel · Issue #21415 · electron/electron · GitHub](https://github.com/electron/electron/issues/21415#issuecomment-760118781)
+
+업데이트되지 않고 오랫동안 방치된 인텔 그래픽카드 드라이버와 뭔가 충돌이 있다고 한다. 단순히 `xfce-video-intel`를 삭제했더니 문제가 해결됐다.
+
+---
+
+# 충돌
+
+멀쩡한 패키지 하나를 날렸으니 `xfce-video-intel`를 사용하는 다른 곳에서 문제가 생길 수 있다. 지금까지 확인된 문제는 `xbacklight`하나 뿐이니 다행이라고 할 수 있다.
+
+#### xbacklight
+
+잘 되던 애가 갑자기 조절이 안 된다.
+
+`xbacklight +5`란 단순한 밝기 증가 명령에 `No outputs have backlight property`란 대답이 돌아온다. ArchWiki에 관련 글이 있다. 
+
+[Backlight - ArchWiki](https://wiki.archlinux.org/title/Backlight#xbacklight_returns_:_No_outputs_have_backlight_property)
+
+`acpilight`를 설치해서 기존의 `xbacklight`를 대체하게 하면 된다.
+
+<br>
+
+아직도 문제는 남았는데, 새로운 `xbacklight`는 `sudo` 권한을 줘야만 실행된다. 즉, `sudo xbacklight +5`라고 해야 한다. 터미널에서 쓸 명령도 아니고, keybinding으로 쓸 명령이므로 이것도 해결해야 한다.
+
+```bash
+[Errno 13] Permission denied: '/sys/class/backlight/intel_backlight/brightness'
+```
+
+권한 문제를 일으킨 파일로 가봤다. 해당 파일엔 others에게 write 권한이 없다.
+
+```bash
+.rw-rw-r-- 4.1k root  8 Jul 21:11 brightness
+```
+
+`chmod o+w brightness`로 권한만 추가하니 해결되었다.
+
+---
+
+# Summary
+
+원인도 모르고 방치했던 문제가 해결되어 기분이 좋다. Alacritty와 Discord가 문제에서 해방되었다. 덕분에 Xfce-terminal은 다시 구석에 박히게 되었다.
+
+역시 Intel은 도움이 되지 않는다.
