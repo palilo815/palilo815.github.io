@@ -1,5 +1,5 @@
 ---
-title: Rustling - move_semantics
+title: rustling - move_semantics
 date: 2022-07-10 17:30:00 +0900
 categories: [rust, rustling]
 tags: [rust]     # TAG names should always be lowercase
