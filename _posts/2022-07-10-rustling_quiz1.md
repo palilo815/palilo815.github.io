@@ -1,5 +1,5 @@
 ---
-title: Rustling - 벼ㅑ
+title: Rustling - quiz 1
 date: 2022-07-10 14:35:00 +0900
 categories: [rust, rustling]
 tags: [rust]     # TAG names should always be lowercase
