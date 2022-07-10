@@ -1,11 +1,11 @@
 ---
-title: Rustling - Intro
+title: rustling - intro
 date: 2022-07-07 23:00:00 +0900
 categories: [rust, rustling]
 tags: [rust]     # TAG names should always be lowercase
 ---
 
-# Rustling
+# rustling
 
 rust를 재밌는 퀴즈와 같이 배울 수 있는 튜토리얼이다. 에러가 있는 rust 코드가 주어지면 올바르게 고쳐야 한다. 아래 링크에서 설치할 수 있다.
 
@@ -112,7 +112,7 @@ Progress: You completed 0 / 84 exercises (0.00 %).
 
 ---
 
-# Intro 1
+# intro 1
 
 ```bash
 Hello and
@@ -160,7 +160,7 @@ fn main() {
 
 ---
 
-# Intro 2
+# intro 2
 
 ```bash
 ⚠️  Compilation of exercises/intro/intro2.rs failed!, Compiler error message:

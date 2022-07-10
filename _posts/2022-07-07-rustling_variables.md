@@ -1,11 +1,11 @@
 ---
-title: Rustling - Variables
+title: rustling - variables
 date: 2022-07-07 23:00:00 +0900
 categories: [rust, rustling]
 tags: [rust]     # TAG names should always be lowercase
 ---
 
-# Variables 1
+# variables 1
 
 ```bash
 ⚠️  Compilation of exercises/variables/variables1.rs failed!, Compiler error message:
@@ -40,7 +40,7 @@ fn main() {
 
 ---
 
-# Variables 2
+# variables 2
 
 ```bash
 ⚠️  Compilation of exercises/variables/variables2.rs failed!, Compiler error message:
@@ -75,7 +75,7 @@ fn main() {
 
 ---
 
-# Variables 3
+# variables 3
 
 ```bash
 ⚠️  Compilation of exercises/variables/variables3.rs failed!, Compiler error message:
@@ -112,7 +112,7 @@ fn main() {
 
 ---
 
-# Variables 4
+# variables 4
 
 ```bash
 ⚠️  Compilation of exercises/variables/variables4.rs failed!, Compiler error message:
@@ -143,7 +143,7 @@ fn main() {
 
 ---
 
-# Variables 5
+# variables 5
 
 ```bash
 ⚠️  Compilation of exercises/variables/variables5.rs failed!, Compiler error message:
@@ -185,7 +185,7 @@ fn main() {
 
 ---
 
-# Variables 6
+# variables 6
 
 ```bash
 ⚠️  Compilation of exercises/variables/variables6.rs failed!, Compiler error message:
