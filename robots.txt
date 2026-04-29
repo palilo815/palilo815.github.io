@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://palilo815.github.io/sitemap.xml
