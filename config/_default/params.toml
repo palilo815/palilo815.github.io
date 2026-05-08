@@ -3,7 +3,7 @@ defaultAppearance = "light"
 autoSwitchAppearance = true
 enableA11y = false
 enableSearch = true
-enableCodeCopy = false
+enableCodeCopy = true
 enableStructuredBreadcrumbs = false
 replyByEmail = false
 disableImageOptimization = false
@@ -21,6 +21,7 @@ buymeacoffee = { }
 verification = { }
 rssnext = { }
 advertisement = { }
+smartTOC = ""
 
 [header]
 layout = "basic"
@@ -33,8 +34,8 @@ showAppearanceSwitcher = true
 showScrollToTop = true
 
 [homepage]
-layout = "profile"
-showRecent = false
+layout = "hero"
+showRecent = true
 showRecentItems = 5
 showMoreLink = false
 showMoreLinkDest = "/posts/"

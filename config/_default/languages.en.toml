@@ -6,12 +6,17 @@ title = "palilo's"
 
 [params]
 displayName = "EN"
-isoCode = "ko"
+isoCode = "kr"
 rtl = false
 dateFormat = "2006-01-02"
-description = "palilo's blog"
 copyright = "© 2026 palilo"
+logo = "none"
+description = "palilo's blog"
 
 ["params.author"]
 name = "palilo"
 email = "palilo@protonmail.com"
+image = "box.svg"
+imageQuality = ""
+headline = "Developer"
+bio = "Ex-competitive programmer"
