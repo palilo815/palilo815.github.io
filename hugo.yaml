@@ -1,3 +1,82 @@
 baseURL: https://example.org/
-locale: en-us
-title: My New Hugo Project
+locale: ko-KR
+defaultContentLanguage: ko
+title: palilo's
+mainSections: [posts]
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+menus:
+  main:
+    - name: Posts
+      pageRef: /posts
+      weight: 10
+      params:
+        icon: posts
+    - name: Archives
+      pageRef: /archives
+      weight: 20
+      params:
+        icon: archive
+    - name: More
+      weight: 30
+      params:
+        icon: layers
+    - name: Categories
+      pageRef: /categories
+      parent: More
+      weight: 1
+      params:
+        icon: categories
+    - name: Tags
+      pageRef: /tags
+      parent: More
+      weight: 2
+      params:
+        icon: tags
+    - name: Series
+      pageRef: /series
+      parent: More
+      weight: 3
+      params:
+        icon: bookmark
+    - name: Projects
+      pageRef: /projects
+      parent: More
+      weight: 4
+      params:
+        icon: projects
+
+params:
+  favicon:
+    svg: /images/constellation.svg
+  author:
+    name: palilo's
+    title: 개인 블로그
+    description: 이것저것
+    avatar: /images/constellation.svg
+  colorScheme: default
+  header:
+    showThemeSwitch: true
+    logo:
+      image: /images/constellation.svg
+  themes:
+    default: { name: Default, order: 1 }
+    claude: { name: Claude, order: 2 }
+    bumblebee: { name: Bumblebee, order: 3 }
+    emerald: { name: Emerald, order: 4 }
+    nord: { name: Nord, order: 5 }
+    sunset: { name: Sunset, order: 6 }
+    abyss: { name: Abyss, order: 7 }
+    dracula: { name: Dracula, order: 8 }
+    amethyst: { name: Amethyst, order: 9 }
+    slate: { name: Slate, order: 10 }
+    twitter: { name: Twitter, order: 11 }
+    minimal: { name: Minimal, order: 12 }
+
+module:
+  imports:
+    - path: github.com/tom2almighty/hugo-narrow
