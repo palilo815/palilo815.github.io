@@ -49,6 +49,33 @@ menus:
       weight: 4
       params:
         icon: projects
+    - name: Resume
+      pageRef: /resume
+      parent: More
+      weight: 5
+      params:
+        icon: file-text
+  footer:
+    - name: Timeline
+      pageRef: /timeline
+      weight: 10
+      params:
+        icon: chart
+    - name: About
+      pageRef: /about
+      weight: 20
+      params:
+        icon: about
+    - name: Resume
+      pageRef: /resume
+      weight: 25
+      params:
+        icon: file-text
+    - name: RSS Feed
+      url: /index.xml
+      weight: 30
+      params:
+        icon: rss
 
 params:
   favicon:
@@ -58,6 +85,19 @@ params:
     title: 개인 블로그
     description: 이것저것
     avatar: /images/constellation.svg
+    social:
+      - name: GitHub
+        url: https://github.com/palilo815
+        icon: github
+      - name: Codeforces
+        url: https://codeforces.com/profile/palilo
+        icon: codeforces
+      - name: AtCoder
+        url: https://atcoder.jp/users/palilo
+        icon: code
+      - name: Email
+        url: mailto:palilo@protonmail.com
+        icon: email
   colorScheme: default
   header:
     showThemeSwitch: true
