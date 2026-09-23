@@ -3,6 +3,33 @@ locale: ko-KR
 defaultContentLanguage: ko
 title: palilo's
 mainSections: [posts]
+hasCJKLanguage: true
+enableEmoji: true
+
+# Narrow 예시 글의 확장 Markdown 및 HTML 요소 렌더링
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      strikethrough: false
+      extras:
+        delete:
+          enable: true
+        insert:
+          enable: true
+        mark:
+          enable: true
+        subscript:
+          enable: true
+        superscript:
+          enable: true
+  highlight:
+    noClasses: false
+    lineNumbersInTable: false
+
+outputs:
+  home: [HTML, RSS, JSON]
 
 taxonomies:
   category: categories

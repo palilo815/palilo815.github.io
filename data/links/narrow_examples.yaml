@@ -1,0 +1,10 @@
+- id: narrow-example-guide
+  title: Narrow 기능 안내
+  description: 예제의 첫 페이지로 이동합니다.
+  url: /posts/reference/narrow-start/
+  icon: /images/constellation.svg
+- id: narrow-example-images
+  title: 이미지와 갤러리
+  description: 표지와 갤러리 레이아웃을 비교합니다.
+  url: /posts/reference/narrow-images/
+  icon: /images/constellation.svg
