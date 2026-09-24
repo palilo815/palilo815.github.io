@@ -18,14 +18,12 @@ Feb 2022 – Present
 
 2015 – 2022
 
-**Double major:** Department of Computer Science; School of Civil,
-Architectural Engineering & Landscape Architecture
+**Double major:** Computer Science; Civil, Architectural Engineering & Landscape
+Architecture
 
 ## Awards
 
 - **[ICPC Korea 2021](https://icpckorea.org/history)** — Encouragement Prize
-  (National Information Society Agency President Award / Korean Institute of
-  Information Scientists and Engineers President Award)
 - **[SCPC 2021](https://www.codeground.org/scpc/commons/honer/list)** — 5th Prize
 - **[UCPC 2021](https://ucpc.me/)** — 11th Place
 
