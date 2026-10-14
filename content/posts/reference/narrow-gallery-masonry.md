@@ -20,10 +20,10 @@ lightbox:
 높이가 다른 그림을 벽돌처럼 배치합니다. [격자 갤러리](/posts/reference/narrow-gallery-grid/)와
 비교하면 세로 그림의 비율이 더 잘 드러납니다.
 
-![세로 그림](/images/reference/portrait.png "세로형")
-![가로 그림](/images/reference/cover.png "가로형")
-![정사각형 그림](/images/reference/square.png "정사각형")
-![세로 그림 반복](/images/reference/portrait.png "같은 그림도 다른 자리에 배치됩니다")
+![세로 그림](/posts/reference/narrow-images/portrait.png "세로형")
+![가로 그림](/posts/reference/narrow-images/cover.png "가로형")
+![정사각형 그림](/posts/reference/narrow-images/square.png "정사각형")
+![세로 그림 반복](/posts/reference/narrow-images/portrait.png "같은 그림도 다른 자리에 배치됩니다")
 
 ```yaml
 gallery:

@@ -19,9 +19,9 @@ lightbox:
 세 장의 그림을 같은 너비의 칸에 배치합니다. 화면을 좁히면 배치가 어떻게 변하는지 확인하세요.
 위의 레이아웃 버튼을 누르면 같은 이미지로 justified·masonry 방식도 비교할 수 있습니다.
 
-![가로 그림](/images/reference/cover.png "가로 그림")
-![세로 그림](/images/reference/portrait.png "세로 그림")
-![정사각형 그림](/images/reference/square.png "정사각형 그림")
+![가로 그림](/posts/reference/narrow-images/cover.png "가로 그림")
+![세로 그림](/posts/reference/narrow-images/portrait.png "세로 그림")
+![정사각형 그림](/posts/reference/narrow-images/square.png "정사각형 그림")
 
 이미지를 누르면 라이트박스가 열립니다. 캡션과 이전·다음 이동도 확인해 보세요.
 

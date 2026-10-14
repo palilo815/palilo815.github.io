@@ -16,8 +16,8 @@ lightbox:
 이 글의 그림에는 갤러리 레이아웃 버튼과 클릭 확대가 붙지 않습니다.
 [갤러리 예제](/posts/reference/narrow-images/)와 비교해 보세요.
 
-![가로 그림](/images/reference/cover.png "첫 번째 그림")
-![세로 그림](/images/reference/portrait.png "두 번째 그림")
+![가로 그림](/posts/reference/narrow-images/cover.png "첫 번째 그림")
+![세로 그림](/posts/reference/narrow-images/portrait.png "두 번째 그림")
 
 ```yaml
 gallery:

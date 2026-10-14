@@ -5,7 +5,7 @@ draft: true
 summary: "홈의 대표 프로젝트 카드와 프로젝트 전용 페이지를 비교하기 위한 가상 예제."
 status: completed
 tags: [narrow, example, project]
-cover: /images/reference/cover.png
+cover: /posts/reference/narrow-images/cover.png
 link: /posts/reference/narrow-start/
 featured: true
 ---
@@ -17,7 +17,7 @@ featured: true
 ```yaml
 featured: true
 status: completed
-cover: /images/reference/cover.png
+cover: /posts/reference/narrow-images/cover.png
 link: /posts/reference/narrow-start/
 ```
 
