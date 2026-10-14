@@ -3,7 +3,6 @@ title: "06. 전용 레이아웃과 사이트 기능"
 date: 2026-09-22T09:00:00+09:00
 draft: true
 summary: "06. 전용 레이아웃과 사이트 기능 — 직접 눌러 보고 소스를 복사하는 Narrow 사용 예제."
-categories: [Narrow 사용법]
 tags: [narrow, example]
 series: [Narrow 실습]
 series_order: 6
@@ -34,7 +33,7 @@ series_order: 6
 
 [Posts](/posts/)는 일반 글 목록,
 [Archives](/archives/)는 날짜별 글 모음입니다.
-[Categories](/categories/), [Tags](/tags/), [Series](/series/)도 확인하세요.
+[Tags](/tags/), [Series](/series/)도 확인하세요.
 시리즈는 글머리와 분류 화면에서 순서를 확인할 수 있습니다.
 
 목록 페이지는 `_index.md`, 단일 글 묶음은 `index.md`를 사용합니다.

@@ -3,7 +3,6 @@ title: "08. 격자 갤러리"
 date: 2026-09-22T09:00:00+09:00
 draft: true
 summary: "같은 크기의 칸에 이미지를 놓는 grid 갤러리 예제."
-categories: [Narrow 사용법]
 tags: [narrow, example, gallery]
 series: [Narrow 실습]
 series_order: 8

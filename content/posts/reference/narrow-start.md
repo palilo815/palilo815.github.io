@@ -3,7 +3,6 @@ title: "00. 여기서 시작: 글머리와 기능 안내"
 date: 2026-09-22T09:00:00+09:00
 draft: true
 summary: "00. 여기서 시작: 글머리와 기능 안내 — 직접 눌러 보고 소스를 복사하는 Narrow 사용 예제."
-categories: [Narrow 사용법]
 tags: [narrow, example]
 series: [Narrow 실습]
 series_order: 0
@@ -41,7 +40,7 @@ license:
 | [09. 벽돌 갤러리](/posts/reference/narrow-gallery-masonry/)    | 높이가 다른 이미지 배치                        |
 | [10. 이미지 단독 표시](/posts/reference/narrow-image-plain/)   | 갤러리·라이트박스 끄기                         |
 | [11. 긴 코드](/posts/reference/narrow-long-code/)              | 자동 접기와 복사 버튼                          |
-| [12. 글 정보](/posts/reference/narrow-post-options/)           | 분류·시리즈·저작권 카드 비교                   |
+| [12. 글 정보](/posts/reference/narrow-post-options/)           | 태그·시리즈·저작권 카드 비교                   |
 
 ## 글머리의 구성
 
@@ -49,7 +48,7 @@ license:
 생략한 형태를 비교할 수 있습니다. 08–12번은 각 설정의 차이를 별도 페이지에서 보여줍니다.
 
 지금 보이는 제목은 `title`, 제목 아래 소개는 `summary`입니다.
-날짜·읽기 시간·글자 수·분류가 기본 정보 카드에 나옵니다.
+날짜·읽기 시간·글자 수·태그가 기본 정보 카드에 나옵니다.
 오른쪽의 시리즈 목록은 같은 `series`를 가진 글을
 `series_order` 순으로 묶은 것입니다. 좁은 화면에서는 세로로 배치됩니다.
 
@@ -60,7 +59,6 @@ date: 2026-09-22T09:00:00+09:00
 draft: false
 description: "검색 엔진 등에 사용하는 설명"
 summary: "제목 아래와 목록에 표시할 요약"
-categories: [개발]
 tags: [hugo, markdown]
 series: [나의 연재]
 series_order: 1

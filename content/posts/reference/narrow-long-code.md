@@ -3,7 +3,6 @@ title: "11. 긴 코드의 자동 접기"
 date: 2026-09-22T09:00:00+09:00
 draft: true
 summary: "긴 코드 블록의 높이 제한, 펼치기, 복사 버튼을 확인하는 예제."
-categories: [Narrow 사용법]
 tags: [narrow, example, code]
 series: [Narrow 실습]
 series_order: 11

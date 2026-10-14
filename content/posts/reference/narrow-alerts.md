@@ -3,7 +3,6 @@ title: "02. 알림 상자와 접기"
 date: 2026-09-22T09:00:00+09:00
 draft: true
 summary: "02. 알림 상자와 접기 — 직접 눌러 보고 소스를 복사하는 Narrow 사용 예제."
-categories: [Narrow 사용법]
 tags: [narrow, example]
 series: [Narrow 실습]
 series_order: 2

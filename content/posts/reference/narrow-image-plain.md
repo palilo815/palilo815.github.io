@@ -3,7 +3,6 @@ title: "10. 이미지 단독 표시"
 date: 2026-09-22T09:00:00+09:00
 draft: true
 summary: "갤러리와 라이트박스를 끈 일반 이미지 표시 예제."
-categories: [Narrow 사용법]
 tags: [narrow, example, image]
 series: [Narrow 실습]
 series_order: 10

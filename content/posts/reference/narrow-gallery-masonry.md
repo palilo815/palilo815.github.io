@@ -3,7 +3,6 @@ title: "09. 벽돌 갤러리"
 date: 2026-09-22T09:00:00+09:00
 draft: true
 summary: "가로·세로 그림의 비율을 살리는 masonry 갤러리 예제."
-categories: [Narrow 사용법]
 tags: [narrow, example, gallery]
 series: [Narrow 실습]
 series_order: 9

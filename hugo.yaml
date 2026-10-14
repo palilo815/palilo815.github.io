@@ -32,7 +32,6 @@ outputs:
   home: [HTML, RSS, JSON]
 
 taxonomies:
-  category: categories
   tag: tags
   series: series
 
@@ -52,12 +51,6 @@ menus:
       weight: 30
       params:
         icon: layers
-    - name: Categories
-      pageRef: /categories
-      parent: More
-      weight: 1
-      params:
-        icon: categories
     - name: Tags
       pageRef: /tags
       parent: More
@@ -105,6 +98,9 @@ menus:
         icon: rss
 
 params:
+  home:
+    contentOrder:
+      [author-section, page-content, recent-posts, featured-projects]
   favicon:
     svg: /images/constellation.svg
   author:

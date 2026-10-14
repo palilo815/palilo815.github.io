@@ -3,7 +3,6 @@ title: "01. Markdown 문법 둘러보기"
 date: 2026-09-22T09:00:00+09:00
 draft: true
 summary: "01. Markdown 문법 둘러보기 — 직접 눌러 보고 소스를 복사하는 Narrow 사용 예제."
-categories: [Narrow 사용법]
 tags: [narrow, example]
 series: [Narrow 실습]
 series_order: 1
