@@ -19,7 +19,7 @@ license:
 ---
 
 이 예제는 현재 설치된 **Narrow v1.3.16**의 템플릿을 기준으로 작성했습니다.
-아래 링크를 순서대로 열고, 해당 글의 `index.md`와 화면을 비교하세요.
+아래 링크를 순서대로 열고, 해당 글의 Markdown 파일과 화면을 비교하세요.
 모든 예시 글은 `draft: true`로 Git에 보관하되 일반 배포에서는 제외합니다.
 로컬에서 예제를 보려면 `hugo server -D`로 실행하세요.
 본문의 작성 예시에 나오는 `draft: false`는 실제로 공개할 글을 위한 설정입니다.
@@ -36,11 +36,17 @@ license:
 | [04. 이미지](/posts/reference/narrow-images/)                  | 표지, 썸네일, 캡션, 세 가지 갤러리, 라이트박스 |
 | [05. 숏코드](/posts/reference/narrow-shortcodes/)              | 아이콘, 버튼, 링크 카드, 동영상                |
 | [06. 레이아웃과 사이트 기능](/posts/reference/narrow-layouts/) | Timeline, Resume, About, Project와 사이트 설정 |
+| [07. 기본 글머리](/posts/reference/narrow-plain/)              | 표지·요약·시리즈 없는 글                       |
+| [08. 격자 갤러리](/posts/reference/narrow-gallery-grid/)       | 균일한 칸과 이미지 캡션                        |
+| [09. 벽돌 갤러리](/posts/reference/narrow-gallery-masonry/)    | 높이가 다른 이미지 배치                        |
+| [10. 이미지 단독 표시](/posts/reference/narrow-image-plain/)   | 갤러리·라이트박스 끄기                         |
+| [11. 긴 코드](/posts/reference/narrow-long-code/)              | 자동 접기와 복사 버튼                          |
+| [12. 글 정보](/posts/reference/narrow-post-options/)           | 분류·시리즈·저작권 카드 비교                   |
 
 ## 글머리의 구성
 
 [07. 기본 글머리](/posts/reference/narrow-plain/)에서는 표지·요약·시리즈를 모두
-생략한 형태를 비교할 수 있습니다.
+생략한 형태를 비교할 수 있습니다. 08–12번은 각 설정의 차이를 별도 페이지에서 보여줍니다.
 
 지금 보이는 제목은 `title`, 제목 아래 소개는 `summary`입니다.
 날짜·읽기 시간·글자 수·분류가 기본 정보 카드에 나옵니다.

@@ -27,6 +27,8 @@ series_order: 6
 일반 프로젝트는 `content/projects/프로젝트명/index.md`에 만들면 됩니다.
 `featured: true`로 대표 프로젝트를 지정할 수 있지만,
 홈 대표 프로젝트 영역도 별도로 활성화되어 있어야 합니다.
+[대표 프로젝트 예제](/projects/reference/narrow-showcase/)는 두 조건을 모두 적용했습니다.
+`hugo server -D`에서 홈 아래쪽의 카드와 프로젝트 목록을 비교하세요.
 
 ## 목록과 분류
 
